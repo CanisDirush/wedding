@@ -1,0 +1,278 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0/0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  height: auto;
+}
+footer {
+  padding: 2rem;
+  background-color: var(--pink);
+  color: white;
+}
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0,5rem;
+}
+
+.hero ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url(img/bg1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+}
+.hero {
+  min-height: 100vh;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+}
+
+.hero h4 {
+  font-size: 1.4rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+.hero a {
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+.hero a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur;
+}
+.mynavbar .offcanvas{
+  height: 100vh;
+}
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.home {
+  background-image: url(img/5631800.jpg);
+  background-size: cover;
+  margin-top: -6rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.home h2, 
+.rsvp h2,
+.gifts h2 {
+  color: var(--pink);
+  font-family: 'Sacramento';
+  font-size: 5rem;
+  font-weight: bold;
+}
+.gifts {
+  background-color: white;
+  margin-top: -6rem;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+}
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: black; 
+}
+
+.rsvp p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+}
+
+.rsvp {
+  background-color: white;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.rsvp h2 {
+  font-size: 4.5rem;
+}
+
+.rsvp button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+.rsvp button:hover {
+  background-color: #444;
+  color: white;
+  border: 1px solid #444;
+}
+.home h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.home p {
+  font-size: 1.1rem;
+  color: #666;
+}
+.home .couple {
+  margin-top: 100px;
+}
+.home .couple h3 {
+  font-family: 'Sacramento';
+  font-size: 2.4rem;
+  color: var(--pink);
+}
+.home .couple img {
+  width: 100%;
+}
+.info {
+  background-color: var(--bg);
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.info h2 {
+  color: var(--pink);
+  font-family: 'Sacramento';
+  font-size: 5rem;
+  font-weight: bold;
+}
+.info .alamat {
+  font-size: 1.1rem;
+}
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+.info .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.info .card-body {
+  font-size: 1rem;
+}
+.info .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Media Query */
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 90%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 50px;
+    margin: 5px;
+  }
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+/* Mobile Phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 40px;
+    margin: 3px;
+  }
+}
